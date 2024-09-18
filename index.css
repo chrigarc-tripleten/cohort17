@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+}
+
+.controls {
+    position: relative;
+    z-index: 1;
+}
+
+.area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;        
+}
+
+.ball_active {
+    border: 5px dotted gold;
+}
