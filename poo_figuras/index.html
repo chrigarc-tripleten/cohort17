@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="pages/index.css">
+</head>
+<body>
+    <div class="page">
+        <main class="main">
+            <section class="controls">
+                <form class="form">
+                    <label for="select" class="form__label">Tipo</label>
+                    <select name="type" id="select" class="form__input" required>
+                        <option value="">Seleccionar</option>
+                        <option value="square">Cuadrado</option>
+                        <option value="circle">Circulo</option>
+                    </select>
+                    <label for="size" class="form__label">Medida</label>
+                    <input type="number" step="1" class="form__input" name="size" required>
+                    <input type="submit" class="form__submit" value="Agregar">
+                </form>
+            </section>
+            <section class="shapes">
+
+            </section>
+        </main>
+    </div>
+    <template class="template">
+        <article class="shape">
+            <div class="shape__content"></div>
+            <p class="shape__text"></p>
+            <div class="shape__actions">
+                <button class="shape__action shape__action_type_area">Area</button>
+                <button class="shape__action shape__action_type_perimeter">Perimetro</button>
+                <button class="shape__action shape__action_type_custom">Custom</button>
+            </div>
+        </article>
+    </template>
+    <script src="scripts/index.js" type="module"></script>
+</body>
+</html>
